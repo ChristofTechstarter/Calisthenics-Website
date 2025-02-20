@@ -48,3 +48,16 @@ header {
 
 /* Header END */
 
+/* Content Start */
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #d3d3d3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #a00000;
+}
+
+/* Content END */
