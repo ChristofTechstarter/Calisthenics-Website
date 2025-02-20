@@ -1,0 +1,29 @@
+.content {
+    padding: 0px;
+}
+
+.uebung {
+    margin: 20px;
+    background: #d3d3d3;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 2px solid #a00000;
+}
+
+h3 {
+    margin-top: 0px;
+}
+
+ul {
+    text-align: left;
+}
+
+li::marker {
+    color: #a00000;
+  }
+
+.uebungIMG {
+    height: 400px;
+    border: 2px solid #a00000;
+    border-radius: 8px;
+}
