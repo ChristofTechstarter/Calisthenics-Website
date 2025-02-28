@@ -1,0 +1,31 @@
+table {
+    border: 2px solid  #a00000;
+    border-collapse: collapse;
+    width: 100%;
+}
+    
+td {
+    border: 1px solid #a00000;
+    padding: 10px;
+}   
+
+thead td {
+    background-color: #a00000;
+    color: white;
+}
+
+td a {
+    text-decoration: none;
+    color: #a00000;
+    &:hover {
+        color: #700000;
+    }
+}
+
+li {
+    text-align: left;
+}
+
+li::marker {
+    color: #a00000;
+  }
