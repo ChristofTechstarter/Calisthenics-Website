@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 
 def load_json(key):
@@ -101,6 +103,28 @@ def update_username():
                     {"message": f"Your Password for User {username} is incorrect!"}
                 )
     return jsonify({"message": f"No Username: {username} was found!"})
+
+
+@app.route("/login", methods=["POST"])
+def login():
+    users = load_json("users")
+    data = request.get_json()
+
+    username = data.get("username")
+    password = data.get("password")
+
+    if not username or not password:
+        return jsonify({"message": "Username and password are required!"}), 400
+
+    user = next((user for user in users if user["username"] == username), None)
+
+    if user is None:
+        return jsonify({"message": f"No user {username} found!"}), 404
+
+    if user["password"] == password:
+        return jsonify({"message": f"Successfully logged in {username}!"}), 200
+    else:
+        return jsonify({"message": "Incorrect password!"}), 401
 
 
 @app.route("/users/delete", methods=["DELETE"])
