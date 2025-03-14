@@ -4,10 +4,10 @@
 
 .uebung {
     margin: 20px;
-    background: #d3d3d3;
+    background: var(--secondary);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    border: 2px solid #a00000;
+    border-radius: var(--borderradius);
+    border: 2px solid var(--primary);
 }
 
 h3 {
@@ -19,11 +19,11 @@ ul {
 }
 
 li::marker {
-    color: #a00000;
+    color: var(--primary);
   }
 
 .uebungIMG {
     height: 400px;
-    border: 2px solid #a00000;
+    border: 2px solid var(--primary);
     border-radius: 8px;
 }

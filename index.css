@@ -4,6 +4,10 @@ ul {
 }
 
 .cIMG {
-    border: 2px solid #a00000;
-    border-radius: 8px;
+    border: 2px solid var(--primary);
+    border-radius: var(--borderradius);
 }
+
+li::marker {
+    color: var(--primary);
+  }

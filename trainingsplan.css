@@ -1,22 +1,22 @@
 table {
-    border: 2px solid  #a00000;
+    border: 2px solid  var(--primary);
     border-collapse: collapse;
     width: 100%;
 }
     
 td {
-    border: 1px solid #a00000;
+    border: 1px solid var(--primary);
     padding: 10px;
 }   
 
 thead td {
-    background-color: #a00000;
+    background-color: var(--primary);
     color: white;
 }
 
 td a {
     text-decoration: none;
-    color: #a00000;
+    color: var(--primary);
     &:hover {
         color: #700000;
     }
@@ -27,5 +27,5 @@ li {
 }
 
 li::marker {
-    color: #a00000;
+    color: var(--primary);
   }

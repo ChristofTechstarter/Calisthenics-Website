@@ -1,3 +1,10 @@
+:root {
+    --primary: #a00000;
+    --secondary: #d3d3d3;
+    --borderradius: 8px;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #a00000;
+    background-color: var(--primary);
 }
   
 .navbar li {
@@ -40,7 +47,7 @@ body {
 
 /* Header Start */
 header {
-    background-color: #a00000;
+    background-color: var(--primary);
     color: white;
     padding: 15px;
     font-size: 24px;
@@ -54,10 +61,10 @@ header {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #d3d3d3;
+    background: var(--secondary);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    border: 2px solid #a00000;
+    border: 2px solid var(--primary);
 }
 
 /* Content END */
