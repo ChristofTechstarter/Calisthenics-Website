@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calisthenics – Kontakt</title>
+    <title>Kontakt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="kontakt.css">
 </head>
@@ -17,9 +17,25 @@
         </ul>
     </nav>
 
-    <header>Calisthenics – Kontakt</header>
+    <header>Kontakt</header>
     
     <div class="content">
+        <form>
+            <fieldset>
+              <label for="firstName">Vorname:</label>
+              <input class="inputFields" id="firstName" type="text" size="30" placeholder="Vornamen eingeben..."/>
+              <br>
+              <label for="lastName">Nachname:</label>
+              <input class="inputFields" id="lastName" type="text" size="30" placeholder="Nachnamen eingeben..."/>
+              <br>
+              <label for="email">E-Mail:</label>
+              <input class="inputFields" id="email" type="email" size="30" placeholder="Email eingeben..."/>
+              <br>
+              <textarea cols="30" rows="10" placeholder="Gib deine Nachricht ein...."></textarea>
+              <br>
+              <input type="submit" />
+            </fieldset>
+          </form>
     </div>
 </body>
 </html>

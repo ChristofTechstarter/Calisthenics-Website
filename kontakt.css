@@ -1,0 +1,56 @@
+fieldset {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    border-radius: var(--borderradius);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+label {
+    color: var(--primary);
+}
+
+.inputFields {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: var(--borderradius);
+    height: 20px;
+    color: var(--primary);
+    &:focus {
+        color: red;
+        background-color: var(--secondary);
+    }
+    &:hover {
+        background-color: #700000;
+        color: white;
+    }
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid var(--primary);
+    border-radius: var(--borderradius);
+    color: var(--primary);
+    &:focus {
+        color: red;
+        background-color: var(--secondary);
+    }
+    &:hover {
+        background-color: #700000;
+        color: white;
+    }
+}
+
+input[type=submit] {
+    border: 1px solid var(--primary);
+    border-radius: var(--borderradius);
+    width: 80px;
+    &:hover {
+        background-color: #700000;
+        color: white;
+        cursor: pointer;
+    }
+}
