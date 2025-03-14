@@ -43,6 +43,10 @@ body {
     background-color: rgb(255, 0, 0);
 }
 
+#login {
+    float: right;
+}
+
 /* Navbar END */
 
 /* Header Start */
